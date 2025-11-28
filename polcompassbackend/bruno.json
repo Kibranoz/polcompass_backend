@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "polcompassbackend",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

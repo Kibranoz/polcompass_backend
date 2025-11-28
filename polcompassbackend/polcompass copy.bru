@@ -1,0 +1,47 @@
+meta {
+  name: polcompass copy
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/questions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "field1_name": "économique",
+    "field2_name": "social",
+    "Name": "Général FR",
+    "Description": "Une boussole politique générale pour l'international",
+    "questions": [
+    { "question": "La taxation est du vol.", "affects": "économique", "direction": 1 },
+    { "question": "L'État devrait emprisonner les gens pour possession de drogues illégales.", "affects": "social", "direction": 1 },
+    { "question": "Je soutiens une taxe carbone.", "affects": "économique", "direction": -1 },
+    { "question": "Il serait préférable que le gouvernement contrôle l'économie.", "affects": "économique", "direction": -1 },
+    { "question": "Le travail du sexe impliquant des adultes consentants devrait être légal.", "affects": "social", "direction": -1 },
+    { "question": "Des pays comme la Chine gouvernent mieux que des pays comme les États-Unis ou le Canada.", "affects": "social", "direction": 1 },
+    { "question": "Un salaire minimum fixé par le gouvernement est une mauvaise idée : laissons les gens négocier leurs salaires eux-mêmes.", "affects": "économique", "direction": 1 },
+    { "question": "Les couples homosexuels devraient pouvoir adopter.", "affects": "social", "direction": -1 },
+    { "question": "Les vêtements des femmes d'aujourd'hui sont trop révélateurs.", "affects": "social", "direction": 1 },
+    { "question": "Les entreprises exploitent injustement leurs travailleurs.", "affects": "économique", "direction": -1 },
+    { "question": "Les écoles à charte sont une meilleure solution qu'un système d'éducation publique.", "affects": "économique", "direction": 1 },
+    { "question": "Les personnes qui disent des choses que je considère comme répréhensibles devraient être punies.", "affects": "social", "direction": 1 },
+    { "question": "Les personnes transgenres devraient vivre selon le genre qu'elles souhaitent et être légalement reconnues comme tel.", "affects": "social", "direction": -1 },
+    { "question": "Le gouvernement devrait s'assurer que tout le monde ait assez pour vivre.", "affects": "économique", "direction": -1 },
+    { "question": "Le contrôle des loyers est une bonne idée.", "affects": "économique", "direction": -1 },
+    { "question": "Si vous n'avez rien à cacher, vous n'avez rien à craindre.", "affects": "social", "direction": 1 },
+    { "question": "L'accès à l'avortement devrait être restreint.", "affects": "social", "direction": 1 },
+    { "question": "Nous devrions accueillir les immigrants et les réfugiés.", "affects": "social", "direction": -1 },
+    { "question": "Le gouvernement ne devrait jamais subventionner les entreprises.", "affects": "économique", "direction": 1 },
+    { "question": "Le gouvernement devrait restreindre la vente d'armes.", "affects": "social", "direction": 1 },
+    { "question": "Il serait préférable qu'il y ait moins d'obstacles entre notre gouvernement et nos agents de police.", "affects": "social", "direction": 1 },
+    { "question": "Je soutiens les soins de santé universels.", "affects": "économique", "direction": -1 },
+    { "question": "Si la maison de quelqu'un d'autre brûle, ce n'est pas mon problème et je ne devrais pas payer pour l'imprudence des autres.", "affects": "économique", "direction": 1 },
+    { "question": "La police et les tribunaux devraient être gérés par les marchés libres et payés par des individus volontaires.", "affects": "économique", "direction": 1 },
+    { "question": "La vie des Noirs compte.", "affects": "social", "direction": -1 }
+  ]
+  }
+}

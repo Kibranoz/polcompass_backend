@@ -1,0 +1,11 @@
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: go run main.go
+
+setup:
+   addons:
+    - plan: heroku-postgresql
+      as: DATABASE

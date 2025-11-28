@@ -1,0 +1,15 @@
+meta {
+  name: get polcompass
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/questions?id=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 2
+}
